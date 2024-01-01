@@ -11,7 +11,7 @@ jobs:
         os: ["ubuntu-latest","macos-latest","windows-latest"]
     steps:
     - name: Set up Python
-      uses: ${{ matrix.os }}
+      uses: actions/setup-python@v5.0.0
       with:
         python-version: ${{ matrix.py-version }}
         
